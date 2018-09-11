@@ -1,0 +1,6 @@
+  {
+    "name": "Random Selection",
+    "version": "0.0.1",
+    "description": "Select a random line from a text document.",
+    "manifest_version": 1
+  }
