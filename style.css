@@ -1,5 +1,5 @@
 body	{
-	background-color:#4285f4;
+	background-color:#969696;
 	text-align:left;
 	color: #ffffff;
 	text-shadow: 1px 2px 5px #9b9b9b;
@@ -27,7 +27,7 @@ li	{
 	display: inline;
 }
 #content	{
-	background-color:#0e65f2;
+	background-color:#646464;
 	text-align:center;
 	padding: 5px 15px 8px 15px;
 	border-style: none;
