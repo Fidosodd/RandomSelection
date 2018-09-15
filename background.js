@@ -23,7 +23,7 @@ function randomSelector() {
 				var classSize = Length
 				var randomChoice = Math.floor(Math.random() * classSize); 
 				/*document.write(randomChoice)*/
-				document.write(splitString[randomChoice])
+				document.getElementById("result").innerHTML = (splitString[randomChoice])
 				
             }
         }
