@@ -1,8 +1,7 @@
 body	{
-	background-color:#969696;
+	background-color:#acd1e9;
 	text-align:left;
-	color: #ffffff;
-	text-shadow: 1px 2px 5px #9b9b9b;
+	color: #f8f8ff;
 	line-height: .5;
 	padding: 8px;
 	white-space: nowrap;
@@ -23,19 +22,15 @@ p 	{
 a	{
 	color: #000000;
 }
-li	{
-	display: inline;
+#line	{
+	display: inline-block;
 }
 #content	{
-	background-color:#646464;
-	text-align:center;
+	background-color:#6d929b;
 	padding: 5px 15px 8px 15px;
 	border-style: none;
 	border-radius:10px;
 	
-}
-#content-box	{
-	box-sizing:content-box;
 }
 #footer	{ 
 	font-size:10px;
