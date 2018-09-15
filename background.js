@@ -6,7 +6,8 @@ function randomSelector() {
 	
 	{
     var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", "test.txt", false);
+	var filename = document.getElementById("list").value;
+    rawFile.open("GET", filename, false);
     rawFile.onreadystatechange = function ()
     {
         if(rawFile.readyState === 4)

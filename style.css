@@ -1,7 +1,7 @@
 body	{
-	background-color:#acd1e9;
+	background-color:#f8f8f8;
 	text-align:left;
-	color: #f8f8ff;
+	color: #505050;
 	line-height: .5;
 	padding: 8px;
 	white-space: nowrap;
@@ -15,7 +15,7 @@ h2	{
 	font-size:18px;
 	font-weight: 450;
 	letter-spacing: 0.5px;
-	background-color: #acd1e9;
+	background-color: #f8f8f8;
 	padding: 4%;
 	border-radius:10px;
 }
@@ -31,13 +31,17 @@ span	{
 select	{
 	border: none;
 	border-radius: 4px;
-	background-color: #f1f1f1;
+	background-color: #f8f8f8;
+	padding: 3%; 
+	padding-left: 6%;
+	padding-right: 6%;
 }
 button	{
 	border: none;
 	border-radius: 4px;
-	background-color: #f1f1f1;
-	margin-left: 3px;
+	background-color: #f8f8f8;
+	padding: 10%; 
+	margin-left: 10px;
 }
 .format {
 	padding-left: 23%;
@@ -49,7 +53,7 @@ button	{
 	display: inline-block;
 }
 #content	{
-	background-color:#6d929b;
+	background-color:#add8e6;
 	padding: 5px 15px 8px 15px;
 	border-radius:10px;
 	
@@ -58,6 +62,5 @@ button	{
 	font-size:10px;
 	word-spacing: 0.5px;
 	letter-spacing: 1px;
-	color: #000000;
 	text-align: center;
 }
