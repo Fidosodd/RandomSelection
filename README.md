@@ -1,4 +1,4 @@
-# RandomSelection
+# Student Selector
 Chrome extension that selects a random student from a text document stored locally on the client's computer. 
 
 This friendly sorter will make chooseing a student easy. We know other software can be scary so we designed the RandomSelection app (we are working on the name) to be as friendly as possible. 
