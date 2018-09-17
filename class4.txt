@@ -1,1 +1,10 @@
-Maidenhair_Fern Blechnum_spicant Lady_Fern Licorice_Fern Maidenhair_Fern Many-Footed_Fern Serpentine Maidenhair Sweet_Root Sword_Fern Holly_Fern
+Maidenhair Fern 
+Blechnum spicant 
+Lady Fern 
+Licorice Fern 
+Maidenhair Fern 
+Many-Footed Fern 
+Serpentine Maidenhair 
+Sweet Root 
+Sword Fern 
+Holly Fern

@@ -1,1 +1,14 @@
-Cow Pig Sheep Dog Cat Lizard Dragon Rabbit Bird Fish Chicken Swan Goose Goat 
+Cow 
+Pig 
+Sheep 
+Dog 
+Cat 
+Lizard 
+Dragon 
+Rabbit 
+Bird 
+Fish 
+Chicken 
+Swan 
+Goose 
+Goat 

@@ -1,1 +1,11 @@
-A+ A A- B+ B B- C+ C C- FAIL ☭_all_get_same_grade
+﻿A+ 
+A 
+A- 
+B+ 
+B 
+B- 
+C+ 
+C 
+C- 
+FAIL 
+☭_all_get_same_grade
