@@ -16,7 +16,7 @@ function randomSelector() {
             {
                 var allText = rawFile.responseText;
                 /*document.write(allText);*/
-				var splitString = allText.split(" ");
+				var splitString = allText.split("\n");
 				Length = splitString.length;
 				/*var test = allText.slice(2, 8);*/
 				/*document.write(splitString);*/
