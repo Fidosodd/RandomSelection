@@ -1,1 +1,9 @@
-Walmart State_Grid Sinopec_Group China_NP Royal_Dutch_Shell Toyota_Motor Volkswagen BP Exxon_Mobil
+Walmart 
+State Grid 
+Sinopec Group 
+China NP 
+Royal Dutch Shell 
+Toyota Motor 
+Volkswagen 
+BP 
+Exxon Mobil
