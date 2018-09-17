@@ -10,7 +10,7 @@ This friendly sorter will make chooseing a student easy. We know other software 
 5. Programming Languages
 6. Animals
 7. Batteries
-8. Your Grade
+8. ~~Your Grade~~ Our Grade
 
 # Attributions:
 
