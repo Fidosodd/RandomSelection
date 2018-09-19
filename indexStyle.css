@@ -10,8 +10,11 @@ h1  {
   
 }
 h2  {
+  font-size: 14px;
+
+}
+h3  {
   font-size: 12px;
-  
 }
 a	{
 	color: #000000;
