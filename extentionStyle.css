@@ -21,6 +21,14 @@ h2	{
 	border-radius:8px;
 	padding:12px;
 }
+h3	{
+	font-size:14px;
+	font-weight: 450;
+	letter-spacing: 0.5px;
+	background-color: #f8f8f8;
+	border-radius:8px;
+	padding:8px;
+}
 p 	{
 	line-height: 0.25;
 }
@@ -51,10 +59,11 @@ button	{
 	outline-color: #2a7189;
 }
 textarea {
-    width: 250px;
-	height: 80px;
+    width: 300px;
+	height: 75px;
 	outline: none;
 	resize: none;
+	margin-bottom: 5px;
 }
 #line	{
 	display: inline;
