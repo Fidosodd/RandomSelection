@@ -5,6 +5,8 @@ body	{
 	line-height: .5;
 	padding: 8px;
 	white-space: nowrap;
+	width: 375px;
+	height: 190px;
 }
 h1	{
 	font-size:35px;
