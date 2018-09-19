@@ -1,7 +1,0 @@
-AA 
-AAA 
-Button Cell 
-9v 
-D 
-2CR5 
-Li-Po
