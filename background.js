@@ -6,7 +6,7 @@ window.onload = function() {
 		// if already set then nothing to do 
 		} else {
 			//blank list
-			var list = ["null"];
+			var list = [""];
 			//set blank data for all the classes
 			chrome.storage.local.set({SSClass1: list}, function() {
           			console.log('Value is set to ' + value);
@@ -39,7 +39,6 @@ window.onload = function() {
 		}
 	});
 }
-
 function randomSelector() {
 	
 	{
