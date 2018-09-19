@@ -1,5 +1,5 @@
 window.onload = function() {
-document.getElementById("mybutton").onclick = randomSelector;
+document.getElementById("selectButton").onclick = randomSelector;
 }
 
 function randomSelector() {
