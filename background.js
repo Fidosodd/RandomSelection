@@ -15,15 +15,11 @@ function randomSelector() {
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-                /*document.write(allText);*/
 				var splitString = allText.split("\n");
-				Length = splitString.length;
+				var classSize = splitString.length;
 				/*var test = allText.slice(2, 8);*/
-				/*document.write(splitString);*/
-				
-				var classSize = Length
+
 				var randomChoice = Math.floor(Math.random() * classSize); 
-				/*document.write(randomChoice)*/
 				document.getElementById("result").textContent = (splitString[randomChoice])
 				
             }
