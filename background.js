@@ -1,5 +1,43 @@
 window.onload = function() {
-document.getElementById("selectButton").onclick = randomSelector;
+	document.getElementById("selectButton").onclick = randomSelector;
+	//Check for stored data
+	chrome.storage.local.get('set', function(data) {
+		if (typeof data.links === 'undefined') {
+		// if already set then nothing to do 
+		} else {
+			//blank list
+			var list = ["null"];
+			//set blank data for all the classes
+			chrome.storage.local.set({SSClass1: list}, function() {
+          			console.log('Value is set to ' + value);
+        		});
+			chrome.storage.local.set({SSClass2: list}, function() {
+        	  		console.log('Value is set to ' + value);
+        		});
+			chrome.storage.local.set({SSClass3: list}, function() {
+          			console.log('Value is set to ' + value);
+        		});
+			chrome.storage.local.set({SSClass4: list}, function() {
+          			console.log('Value is set to ' + value);
+        		});
+			chrome.storage.local.set({SSClass5: list}, function() {
+          			console.log('Value is set to ' + value);
+        		});
+			chrome.storage.local.set({SSClass6: list}, function() {
+          			console.log('Value is set to ' + value);
+        		});
+			chrome.storage.local.set({SSClass7: list}, function() {
+          			console.log('Value is set to ' + value);
+        		});
+			chrome.storage.local.set({SSClass8: list}, function() {
+          			console.log('Value is set to ' + value);
+        		});
+			//set data to "set"
+			chrome.storage.local.set({set: "true"}, function() {
+          			console.log('Value is set to ' + value);
+			});
+		}
+	});
 }
 
 function randomSelector() {
