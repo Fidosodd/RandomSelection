@@ -12,14 +12,16 @@ h1	{
 	font-size:35px;
 	word-spacing: 2px;
 	letter-spacing: 1px;
+	margin-bottom:35px;
 }
 h2	{
+	margin-top: 10px;
 	font-size:18px;
 	font-weight: 450;
 	letter-spacing: 0.5px;
 	background-color: #f8f8f8;
 	border-radius:8px;
-	padding:12px;
+	padding:18px 12px 18px 12px;
 }
 h3	{
 	font-size:14px;
@@ -83,6 +85,7 @@ textarea {
 	
 }
 #footer	{ 
+	margin-top: 8px;
 	font-size:10px;
 	word-spacing: 0.5px;
 	letter-spacing: 1px;
