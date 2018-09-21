@@ -1,14 +1,17 @@
-  {
-    "name": "Student Selector",
-    "version": "1.0.1",
-    "description": "Select a random line from a text document.",
-    "manifest_version": 2,
-    "browser_action": {
-		"default_popup": "popup.html",
-		"default_title": "RandomSelection"
-    },
-	"icons": { 
-        "48": "icons/icon_48.png",
-        "128": "icons/icon_128.png"
-	}
+{
+  "name": "Student Selector",
+  "version": "1.0.1",
+  "description": "Select a random line from a text document.",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "RandomSelection"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "icons": { 
+    "48": "icons/icon_48.png",
+    "128": "icons/icon_128.png"
   }
+}
