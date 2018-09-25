@@ -8,28 +8,28 @@ window.onload = function() {
 			//blank list
 			var list = [""];
 			//set blank data for all the classes
-			chrome.storage.local.set({SSClass1: list}, function() {
+			chrome.storage.local.set({SSlist1: list}, function() {
           			console.log('Value is set to ' + value);
         		});
-			chrome.storage.local.set({SSClass2: list}, function() {
+			chrome.storage.local.set({SSlist2: list}, function() {
         	  		console.log('Value is set to ' + value);
         		});
-			chrome.storage.local.set({SSClass3: list}, function() {
+			chrome.storage.local.set({SSlist3: list}, function() {
           			console.log('Value is set to ' + value);
         		});
-			chrome.storage.local.set({SSClass4: list}, function() {
+			chrome.storage.local.set({SSlist4: list}, function() {
           			console.log('Value is set to ' + value);
         		});
-			chrome.storage.local.set({SSClass5: list}, function() {
+			chrome.storage.local.set({SSlist5: list}, function() {
           			console.log('Value is set to ' + value);
         		});
-			chrome.storage.local.set({SSClass6: list}, function() {
+			chrome.storage.local.set({SSlist6: list}, function() {
           			console.log('Value is set to ' + value);
         		});
-			chrome.storage.local.set({SSClass7: list}, function() {
+			chrome.storage.local.set({SSlist7: list}, function() {
           			console.log('Value is set to ' + value);
         		});
-			chrome.storage.local.set({SSClass8: list}, function() {
+			chrome.storage.local.set({SSlist8: list}, function() {
           			console.log('Value is set to ' + value);
         		});
 			//set data to "set"
