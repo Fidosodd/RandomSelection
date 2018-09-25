@@ -1,5 +1,6 @@
 window.onload = function() {
 	document.getElementById("selectButton").onclick = randomSelector;
+	document.getElementById("editButton").onclick = storageEditor;
 	//Check for stored data
 	chrome.storage.local.get('set', function(data) {
 		if (typeof data.links === 'undefined') {
@@ -64,4 +65,7 @@ function randomSelector() {
     }
     rawFile.send(null);
 }
+  }
+  function storageEditor {
+	  
   }
