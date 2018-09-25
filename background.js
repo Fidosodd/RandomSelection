@@ -9,28 +9,28 @@ window.onload = function() {
 			var list = [""];
 			//set blank data for all the classes
 			chrome.storage.local.set({SSlist1: list}, function() {
-          			console.log('Value is set to ' + value);
+          			console.log('Value is set to ');
         		});
 			chrome.storage.local.set({SSlist2: list}, function() {
-        	  		console.log('Value is set to ' + value);
+        	  		console.log('Value is set to ');
         		});
 			chrome.storage.local.set({SSlist3: list}, function() {
-          			console.log('Value is set to ' + value);
+          			console.log('Value is set to ');
         		});
 			chrome.storage.local.set({SSlist4: list}, function() {
-          			console.log('Value is set to ' + value);
+          			console.log('Value is set to ');
         		});
 			chrome.storage.local.set({SSlist5: list}, function() {
-          			console.log('Value is set to ' + value);
+          			console.log('Value is set to ');
         		});
 			chrome.storage.local.set({SSlist6: list}, function() {
-          			console.log('Value is set to ' + value);
+          			console.log('Value is set to ');
         		});
 			chrome.storage.local.set({SSlist7: list}, function() {
-          			console.log('Value is set to ' + value);
+          			console.log('Value is set to ');
         		});
 			chrome.storage.local.set({SSlist8: list}, function() {
-          			console.log('Value is set to ' + value);
+          			console.log('Value is set to ');
         		});
 			//set data to "set"
 			chrome.storage.local.set({set: "true"}, function() {
