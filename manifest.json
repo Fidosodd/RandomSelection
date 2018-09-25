@@ -2,6 +2,10 @@
   "name": "Student Selector",
   "version": "1.0.1",
   "description": "Select a random line from a text document.",
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
   "manifest_version": 2,
   "browser_action": {
     "default_popup": "popup.html",

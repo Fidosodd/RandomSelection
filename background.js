@@ -1,6 +1,7 @@
 window.onload = function() {
 	document.getElementById("selectButton").onclick = randomSelector;
 	document.getElementById("editButton").onclick = storageEditor;
+  document.getElementById("saveButton").onclick = saveEdits;
 	//Check for stored data
 	chrome.storage.local.get('set', function(data) {
 		if (typeof data.links === 'undefined') {
@@ -41,8 +42,7 @@ window.onload = function() {
 	});
 }
 function randomSelector() {
-	
-	{
+  
     var rawFile = new XMLHttpRequest();
 	var filename = document.getElementById("list").value;
     rawFile.open("GET", filename, true);
@@ -65,12 +65,13 @@ function randomSelector() {
     }
     rawFile.send(null);
 }
-  }
   function storageEditor {
-	chrome.storage.local.get(['"SS"+listId'], function(pulledData) {
-        	console.log('Value currently is ' + result.key);
-		document.getElementById("listContent").value = pulledData;
-        });
+    var filename = document.getElementById("list").value;
+    chrome.storage.local.get(['"SS"+list'], function(pulledData) {
+      	console.log('Value currently is ' + result.key);
+      document.getElementById("listContent").value = pulledData;
+    });
+    document.getElementById("listID").textContent = (filename);
   }
   function saveEdits {
     // Get a value saved in a form.
@@ -81,7 +82,7 @@ function randomSelector() {
       return;
     }
     // Save it using the Chrome extension storage API.
-    chrome.storage.local.set({'"SS" + listId': listContent}, function() {
+    chrome.storage.local.set({'"SS" + list': listContent}, function() {
       // Notify that we saved.
       message('Settings saved');
     });
