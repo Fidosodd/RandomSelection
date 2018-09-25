@@ -67,16 +67,8 @@ function randomSelector() {
 }
   }
   function storageEditor {
-	// Get a value saved in a form.
-    var theValue = textarea.listContent;
-    // Check that there's some code there.
-    if (!theValue) {
-      message('Error: No value specified');
-      return;
-    }
-    // Save it using the Chrome extension storage API.
-    chrome.storage.sync.set({'value': theValue}, function() {
-      // Notify that we saved.
-      message('Settings saved');
-    });
+	chrome.storage.local.get(['"SS"+listId'], function(pulledData) {
+        	console.log('Value currently is ' + result.key);
+		document.getElementById("listContent").value = pulledData;
+        });
   }
