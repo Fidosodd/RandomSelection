@@ -1,12 +1,12 @@
 body	{
   width:            375px;
-	height:           200px;
+  height:           200px;
   padding:          8px;
-	background-color: #f8f8f8;
+  background-color: #f8f8f8;
   color:            #505050;
-	text-align:       left;
-	line-height:      0.5;
-	white-space:      nowrap;
+  text-align:       left;
+  line-height:      0.5;
+  white-space:      nowrap;
 }
 h1	{
 	font-size:        35px;
