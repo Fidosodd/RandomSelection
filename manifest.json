@@ -1,15 +1,11 @@
 {
-  "name": "Student Selector",
-  "version": "1.0.1",
-  "description": "Select a random line from a text document.",
-  "background": {
-      "scripts": ["background.js"],
-      "persistent": true
-    },
+  "name": "Randomizer",
+  "version": "1.0",
+  "description": "Select a random item from a local list.",
   "manifest_version": 2,
   "browser_action": {
     "default_popup": "popup.html",
-    "default_title": "RandomSelection"
+    "default_title": "Randomizer"
   },
   "permissions": [
     "storage"
