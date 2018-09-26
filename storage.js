@@ -37,12 +37,12 @@ let saveEdits = () => {
   let listItems = stripped.filter(slimDown);
 	
   function slimDown(value){
-          return value != "" && value != undefined
+      return value != "" && value != undefined
   }
   listItems.unshift(listChange);
 	
   let port = chrome.extension.connect({
-  name: "Save List Items"
+    name: "Save List Items"
   });
   port.postMessage(listItems);
 }
