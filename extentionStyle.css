@@ -9,75 +9,75 @@ body	{
   white-space:      nowrap;
 }
 h1	{
-	font-size:        35px;
-	word-spacing:     2px;
-	letter-spacing:   1px;
+  font-size:        35px;
+  word-spacing:     2px;
+  letter-spacing:   1px;
 }
 h2	{
-	margin-top:       25px;
+  margin-top:       25px;
   border-radius:    8px;
   padding:          18px 12px 18px 12px;
   background-color: #f8f8f8;
-	font-size:        18px;
-	font-weight:      450;
-	letter-spacing:   0.5px;
+  font-size:        18px;
+  font-weight:      450;
+  letter-spacing:   0.5px;
 }
 p 	{
-	line-height:      0.25;
+  line-height:      0.25;
 }
 a	{
-	color:            #000000;
+  color:            #000000;
 }
 span	{
-	display:          inline;
+  display:          inline;
 }
 select	{
   width:            175px;
-	height:           30px;
+  height:           30px;
   margin-top:       0px;
-	border:           none;
-	border-radius:    8px;
-	background-color: #f8f8f8;
+  border:           none;
+  border-radius:    8px;
+  background-color: #f8f8f8;
   outline-color:    #2a7189;
-	font-size:        16px;
+  font-size:        16px;
 }
 button	{
   width:            75px;
-	height:           30px;
+  height:           30px;
   margin-left:      5px;
   margin-top:       0px;
-	border:           none;
-	border-radius:    8px;
-	background-color: #f8f8f8;
+  border:           none;
+  border-radius:    8px;
+  background-color: #f8f8f8;
   outline-color:    #2a7189;
-	font-size:        16px;
-	letter-spacing:   0.5px;
+  font-size:        16px;
+  letter-spacing:   0.5px;
 }
 textarea {
   width:            335px;
-	height:           65px;
+  height:           65px;
   margin-bottom:    5px;
   border-radius:    3px;
-	outline:          none;
-	resize:           none;
+  outline:          none;
+  resize:           none;
 }
 #line	{
-	display:          inline;
+  display:          inline;
 }
 #lineblock	{
-	display:          inline-block;
+  display:          inline-block;
 }
 #content	{
   height:           180px;
-	border-radius:    10px;
+  border-radius:    10px;
   padding:          5px 15px 8px 15px;
   background-color: #add8e6;
 	
 }
 #footer	{ 
-	margin-top:       8px;
-	font-size:        10px;
+  margin-top:       8px;
+  font-size:        10px;
   text-align:       center;
-	word-spacing:     0.5px;
-	letter-spacing:   1px;
+  word-spacing:     0.5px;
+  letter-spacing:   1px;
 }

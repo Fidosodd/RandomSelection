@@ -1,3 +1,6 @@
+//This script reads then writes to the chrome storage
+//Thanks (https://github.com/MilanDonhowe) for your amazing code!
+
 var listChange = 0;
 
 window.onload = function() {

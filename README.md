@@ -1,10 +1,10 @@
-# Student Selector
-Chrome extension that selects a random student from a text document stored locally on the client's computer. 
+# Randomizer
+Chrome extension that selects a random item from a list locally stored  on the client's computer. 
 
-This friendly sorter will make choosing a student easy. We know other software can be scary so we designed the RandomSelection app (we are working on the name) to be as friendly as possible.
+This friendly sorter will make decision easily. We know other software can be scary so we designed the Randomizer app to be as friendly as possible.
 
 # What it does
-The extension will be able to write and recall lists from Chrome's local storage, as well as allow you to edit those lists. You will be able to select one of these lists and have the extension choose a randomized item off of the chosen list. The extension will support eight lists.
+The extension lets to write and recall lists from Chrome's local storage, as well as edit those lists. You are able to select one of these lists and have the extension choose a randomized item off of the chosen list. The extension supports six lists.
 
 # Older version
 This version shows off the randomization and list elements of the extension, but you are unable to edit the lists.
@@ -15,8 +15,8 @@ These are the example lists provided:
 4. Ferns
 5. Programming Languages
 6. Animals
-7. 5th Period CHS computer science class
-8. ~~Your Grade~~ Our Grade
+7. ~~Your Grade~~ Our Grade
+8. empty
 
 # Attributions:
 
@@ -28,6 +28,6 @@ https://stackoverflow.com/questions/2858121/convert-comma-separated-string-to-ar
 
 https://www.w3schools.com 
 
-Milan :)
+[Milan](https://github.com/MilanDonhowe) - the legendary programmer that made this possible! :)
 
 [Documentation Webpage](http://www.morganthomas.tk/RandomSelection/)

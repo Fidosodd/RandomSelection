@@ -1,3 +1,6 @@
+// This script manages which list you are calling from
+//Thanks (https://github.com/MilanDonhowe) for your amazing code!
+
 chrome.extension.onConnect.addListener(function(port) {
 	
 	console.log("Connected... ")
@@ -26,7 +29,6 @@ chrome.extension.onConnect.addListener(function(port) {
 						console.log(msg);
 					});
 					break;
-					
 				case "list3":
 					msg.shift();
 					console.log(msg);
@@ -34,7 +36,6 @@ chrome.extension.onConnect.addListener(function(port) {
 						console.log(msg);
 					});
 					break;
-					
 				case "list4":
 					msg.shift();
 					console.log(msg);
@@ -42,7 +43,6 @@ chrome.extension.onConnect.addListener(function(port) {
 						console.log(msg);
 					});
 					break;
-					
 				case "list5":
 					msg.shift();
 					console.log(msg);
@@ -50,7 +50,6 @@ chrome.extension.onConnect.addListener(function(port) {
 						console.log(msg);
 					});
 					break;
-				
 				case "list6":
 					msg.shift();
 					console.log(msg);
@@ -58,25 +57,7 @@ chrome.extension.onConnect.addListener(function(port) {
 						console.log(msg);
 					});
 					break;
-					
-				case "list7":
-					msg.shift();
-					console.log(msg);
-					chrome.storage.local.set({"list7": msg}, function(){
-						console.log(msg);
-					});
-					break;
-					
-				case "list8":
-					msg.shift();
-					console.log(msg);
-					chrome.storage.local.set({"list8": msg}, function(){
-						console.log(msg);
-					});
-					break;
-				
 			}
-			
 		} else {
 		
 			switch (msg){
@@ -117,22 +98,8 @@ chrome.extension.onConnect.addListener(function(port) {
 						port.postMessage(data.list6);
 					});
 					break;
-				case "list7":
-					chrome.storage.local.get({"list7": []}, function(data){
-						console.log(data.list7);
-						port.postMessage(data.list7);
-					});
-					break;
-				case "list8":
-					chrome.storage.local.get({"list8": []}, function(data){
-						console.log(data.list8);
-						port.postMessage(data.list8);
-					});
-					break;
 			}
 		}
-		
-		
 	});
 });
 

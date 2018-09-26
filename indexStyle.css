@@ -1,6 +1,6 @@
 body	{
-	background-color: #ffffff;
-	color:            #505050;
+  background-color: #ffffff;
+  color:            #505050;
 }
 header {
   padding:          5px 15px 8px 15px;
@@ -8,7 +8,7 @@ header {
   font-size:        30px;
 }
 p 	{
-	line-height:      0.25;
+  line-height:      0.25;
 }
 h1  {
   font-size:        18px;
@@ -22,7 +22,7 @@ h3  {
   font-size:        12px;
 }
 a	{
-	color:            #000000;
+  color:            #000000;
   font-size:        1.5em;
 }
 span	{
@@ -31,19 +31,19 @@ span	{
 footer	{ 
   padding:          5px 15px 8px 15px;
   background-color: #bebebe;
-	font-size:        10px;
+  font-size:        10px;
   text-align:       center;
-	word-spacing:     0.5px;
-	letter-spacing:   1px;
+  word-spacing:     0.5px;
+  letter-spacing:   1px;
 }
 #line	{
-	display:          inline;
+  display:          inline;
 }
 #lineblock	{
-	display:          inline-block;
+  display:          inline-block;
 }
 #content	{
   border-radius:    10px;
   padding:          5px 15px 8px 15px;
-	background-color: #add8e6;
+  background-color: #add8e6;
 }

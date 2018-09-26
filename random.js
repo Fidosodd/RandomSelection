@@ -1,4 +1,6 @@
-var attached = false;
+//This script uses your selected list to pick a random item
+//Thanks (https://github.com/MilanDonhowe) for your amazing code!
+
 var listItems = [];
 
 window.onload = function() {
@@ -14,9 +16,7 @@ let randomSelector = () => {
 	port.postMessage(list);
 	port.onMessage.addListener(function(msg) {
 		console.log("message received");
-		
 		console.log(msg);
-		
 		listItems = msg;
     if (listItems != []) {
       if(listItems[Math.floor(Math.random() * listItems.length)] != undefined){
