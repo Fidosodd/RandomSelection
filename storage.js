@@ -1,33 +1,50 @@
-var periodChange = 0;
+var listChange = 0;
 
 window.onload = function() {
-	document.getElementById("editButton").onclick = storageEditor;
-  document.getElementById("saveButton").onclick = saveEdits;
+  document.getElementById("editButton").addEventListener("click", storageEditor);
+  document.getElementById("saveButton").addEventListener("click", saveEdits);
 }
-  function storageEditor() {
-    var listname = document.getElementById("listSelect").value;
-    console.log('Value currently is ' + listname);
-    chrome.storage.local.get(['listname'], function(data) {
-          console.log('Value currently is ' + data.listname);
-          document.getElementById('listContent').textContent = data.listname;
-        });
-    let port = chrome.extension.connect({
-      name: "Load Student Names"
-    });
+let storageEditor = () => {
+	
+	let list = document.getElementById("listSelect").value;
+	
+	listChange = list;
+	
+	let port = chrome.extension.connect({
+		name: "Load List Items"
+	});
 
-    port.postMessage(listname);
-    port.onMessage.addListener(function(msg) {
-      console.log("message received");
+	port.postMessage(list);
+	port.onMessage.addListener(function(msg) {
+		console.log("message received");
 		
-      console.log(msg);
-    });
-  }
-  function saveEdits() {
-    var listitems = document.getElementById("listContent").value;
-    var listname = document.getElementById("listSelect").value;
-    console.log('Value currently is ' + listitems);
-    console.log('Value currently is ' + listname);
-    chrome.storage.local.set({'listname': listitems}, function(data) {
-          console.log('Value currently is ' + data.listname);
-        });
-  }
+		console.log(msg);
+		
+		let listDisplay = msg;
+		
+		document.getElementById('listContent').value = listDisplay.join(', ');;
+	});
+}
+let saveEdits = () => {
+	
+	if (listChange == 0) {
+			listChange = document.getElementById("listSelect").value;
+	}
+	
+	let textdata = document.getElementById('listContent').value;
+	
+	let stripped = textdata.split(', ');
+	
+	let listItems = stripped.filter(slimDown);
+	
+	function slimDown(value){
+					return value != "" && value != undefined
+	}
+	
+	listItems.unshift(listChange);
+	
+	let port = chrome.extension.connect({
+		name: "Save List Items"
+	});
+	port.postMessage(listItems);
+}
