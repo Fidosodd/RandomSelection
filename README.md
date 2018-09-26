@@ -1,6 +1,8 @@
 # Randomizer
 Chrome extension that selects a random item from a list locally stored  on the client's computer. 
 
+[Download the extension to your Chrome browser](https://chrome.google.com/webstore/detail/randomizer/cdhliilgdklblnbcgpdemndkojdeehpl?hl=en-US&gl=US)
+
 This friendly sorter will make decision easily. We know other software can be scary so we designed the Randomizer app to be as friendly as possible.
 
 # What it does
