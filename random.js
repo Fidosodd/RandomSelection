@@ -1,7 +1,6 @@
 window.onload = function() {
+  console.log('something');
 	document.getElementById("selectButton").onclick = randomSelector;
-	document.getElementById("editButton").onclick = storageEditor;
-  document.getElementById("saveButton").onclick = saveEdits;
 	//Check for stored data
 	chrome.storage.local.get('set', function(data) {
 		if (typeof data.links === 'undefined') {
@@ -64,25 +63,3 @@ function randomSelector() {
     }
     rawFile.send(null);
 }
-  function storageEditor {
-    var filename = document.getElementById("list").value;
-    chrome.storage.local.get(['"SS"+list'], function(pulledData) {
-      	console.log('Value currently is ' + result.key);
-      document.getElementById("listContent").value = pulledData;
-    });
-    document.getElementById("listID").textContent = (filename);
-  }
-  function saveEdits {
-    // Get a value saved in a form.
-    var theValue = textarea.listContent;
-    // Check that there's some code there.
-    if (!theValue) {
-      message('Error: No value specified');
-      return;
-    }
-    // Save it using the Chrome extension storage API.
-    chrome.storage.local.set({'"SS" + list': listContent}, function() {
-      // Notify that we saved.
-      message('Settings saved');
-    });
-  } 

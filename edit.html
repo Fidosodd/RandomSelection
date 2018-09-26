@@ -12,13 +12,24 @@
 			<h1>Student Selector</h1>
 		</p>
 		<p>
-			<h3>List:</h3><span id="listId"></span>
+	  <select id="listSelect">
+      <option value="" disabled Selected>Select List</option>
+			<option value="list1">List 1</option>
+			<option value="list2">List 2</option>
+			<option value="list3">List 3</option>
+			<option value="list4">List 4</option>
+			<option value="list5">List 5</option>
+			<option value="list6">List 6</option>
+			<option value="list7">List 7</option>
+			<option value="list8">List 8</option>
+		</select>
+    <button  id="editButton" type = "button">Edit</button>
 		</p>
-			<textarea id="listContent" name="list" type="text" placeholder="Carl, Steve, Larry..."></textarea>
+			<textarea id="listContent" type="text" placeholder="Carl, Steve, Larry..."></textarea>
 			<br>
 		<div id="line">
 			<a href="popup.html"><button  id="backButton" type = "button">Back</button></a>
-			<a href="popup.html"><button  id="saveButton" type = "button">Save</button></a>
+			<button  id="saveButton" type = "button">Save</button>
 		</div>
 		</center>
 	</div>
