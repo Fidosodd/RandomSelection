@@ -3,8 +3,8 @@
   "version": "1.0",
   "description": "Select a random item from a local list.",
   "background": {
-		"persistent": true,
-		"scripts":["background.js"]
+    "scripts":["background.js"],
+		"persistent": true
 	},
   "manifest_version": 2,
   "browser_action": {
@@ -12,9 +12,7 @@
     "default_title": "Randomizer"
   },
   "permissions": [
-    "storage",
-    "tabs",
-		"<all_urls>"
+    "storage"
   ],
   "icons": { 
     "48": "icons/icon_48.png",
