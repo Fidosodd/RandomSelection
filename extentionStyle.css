@@ -1,12 +1,12 @@
 body	{
+  padding: 8px;
+  width: 375px;
+	height: 200px;
 	background-color: #f8f8f8;
+  color: #505050;
 	text-align: left;
-	color: #505050;
 	line-height: 0.5;
-	padding: 8px;
 	white-space: nowrap;
-	width: 375px;
-	height: 190px;
 }
 h1	{
 	font-size: 35px;
@@ -14,14 +14,13 @@ h1	{
 	letter-spacing: 1px;
 }
 h2	{
-	margin-top: 10px;
-	margin-bottom: 25px;
+	margin-top: 25px;
+  padding: 18px 12px 18px 12px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
 	font-size: 18px;
 	font-weight: 450;
 	letter-spacing: 0.5px;
-	background-color: #f8f8f8;
-	border-radius: 8px;
-	padding: 18px 12px 18px 12px;
 }
 h3	{
 	font-size: 14px;
@@ -53,7 +52,7 @@ select	{
 	height: 30px;
 	font-size: 16px;
 	outline-color: #2a7189;
-	margin-top: 25px;
+	margin-top: 0px;
 }
 button	{
 	border: none;
@@ -62,16 +61,18 @@ button	{
 	width: 75px;
 	height: 30px;
 	margin-left: 5px;
+  margin-top: 0px;
 	font-size: 16px;
 	letter-spacing: 0.5px;
 	outline-color: #2a7189;
 }
 textarea {
-    width: 300px;
-	height: 75px;
+  width: 335px;
+	height: 65px;
 	outline: none;
 	resize: none;
 	margin-bottom: 5px;
+  border-radius: 3px;
 }
 #line	{
 	display: inline;
@@ -83,6 +84,7 @@ textarea {
 	background-color: #add8e6;
 	padding: 5px 15px 8px 15px;
 	border-radius: 10px;
+  height: 180px;
 	
 }
 #footer	{ 
