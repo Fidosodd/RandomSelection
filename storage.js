@@ -16,15 +16,12 @@ let storageEditor = () => {
 	let port = chrome.extension.connect({
 		name: "Load List Items"
 	});
-
 	port.postMessage(list);
+  
 	port.onMessage.addListener(function(msg) {
 		console.log("message received");
-		
 		console.log(msg);
-		
 		let listDisplay = msg;
-		
 		document.getElementById('listContent').value = listDisplay.join(', ');;
 	});
 }
@@ -33,7 +30,6 @@ let saveEdits = () => {
 	if (listChange == 0) {
 			listChange = document.getElementById("listSelect").value;
 	}
-	
 	let textdata = document.getElementById('listContent').value;
 	
 	let stripped = textdata.split(', ');
@@ -43,7 +39,6 @@ let saveEdits = () => {
 	function slimDown(value){
 					return value != "" && value != undefined
 	}
-	
 	listItems.unshift(listChange);
 	
 	let port = chrome.extension.connect({

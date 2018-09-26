@@ -14,6 +14,7 @@ let randomSelector = () => {
 		name: "Load Student Names"
 	});
 	port.postMessage(list);
+  
 	port.onMessage.addListener(function(msg) {
 		console.log("message received");
 		console.log(msg);
