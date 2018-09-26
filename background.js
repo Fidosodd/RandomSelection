@@ -42,8 +42,7 @@ window.onload = function() {
 	});
 }
 function randomSelector() {
-  
-    var rawFile = new XMLHttpRequest();
+
 	var filename = document.getElementById("list").value;
     rawFile.open("GET", filename, true);
     rawFile.onreadystatechange = function ()
