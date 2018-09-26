@@ -4,21 +4,21 @@
 var listItems = [];
 
 window.onload = function() {
-	document.getElementById("selectButton").onclick = randomSelector;
+  document.getElementById("selectButton").onclick = randomSelector;
 }
 let randomSelector = () => {
 	
-	let list = document.getElementById("listSelect").value;
+  let list = document.getElementById("listSelect").value;
 	
-	let port = chrome.extension.connect({
-		name: "Load Student Names"
-	});
-	port.postMessage(list);
+  let port = chrome.extension.connect({
+    name: "Load Student Names"
+  });
+  port.postMessage(list);
   
-	port.onMessage.addListener(function(msg) {
-		console.log("message received");
-		console.log(msg);
-		listItems = msg;
+  port.onMessage.addListener(function(msg) {
+    console.log("message received");
+    console.log(msg);
+    listItems = msg;
     if (listItems != []) {
       if(listItems[Math.floor(Math.random() * listItems.length)] != undefined){
         let selected = listItems[Math.floor(Math.random() * listItems.length)];
@@ -27,5 +27,5 @@ let randomSelector = () => {
         document.getElementById("result").textContent = "To add items hit Edit"
       }
     }
-	});
+  });
 }

@@ -9,40 +9,40 @@ window.onload = function() {
 }
 let storageEditor = () => {
 	
-	let list = document.getElementById("listSelect").value;
+  let list = document.getElementById("listSelect").value;
 	
-	listChange = list;
+  listChange = list;
 	
-	let port = chrome.extension.connect({
-		name: "Load List Items"
-	});
-	port.postMessage(list);
+  let port = chrome.extension.connect({
+    name: "Load List Items"
+  });
+  port.postMessage(list);
   
-	port.onMessage.addListener(function(msg) {
-		console.log("message received");
-		console.log(msg);
-		let listDisplay = msg;
-		document.getElementById('listContent').value = listDisplay.join(', ');;
-	});
+  port.onMessage.addListener(function(msg) {
+    console.log("message received");
+    console.log(msg);
+    let listDisplay = msg;
+    document.getElementById('listContent').value = listDisplay.join(', ');;
+  });
 }
 let saveEdits = () => {
 	
-	if (listChange == 0) {
-			listChange = document.getElementById("listSelect").value;
-	}
-	let textdata = document.getElementById('listContent').value;
+  if (listChange == 0) {
+      listChange = document.getElementById("listSelect").value;
+  }
+  let textdata = document.getElementById('listContent').value;
 	
-	let stripped = textdata.split(', ');
+  let stripped = textdata.split(', ');
 	
-	let listItems = stripped.filter(slimDown);
+  let listItems = stripped.filter(slimDown);
 	
-	function slimDown(value){
-					return value != "" && value != undefined
-	}
-	listItems.unshift(listChange);
+  function slimDown(value){
+          return value != "" && value != undefined
+  }
+  listItems.unshift(listChange);
 	
-	let port = chrome.extension.connect({
-		name: "Save List Items"
-	});
-	port.postMessage(listItems);
+  let port = chrome.extension.connect({
+  name: "Save List Items"
+  });
+  port.postMessage(listItems);
 }

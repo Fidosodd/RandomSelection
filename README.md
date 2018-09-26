@@ -28,6 +28,6 @@ https://stackoverflow.com/questions/2858121/convert-comma-separated-string-to-ar
 
 https://www.w3schools.com 
 
-[Milan](https://github.com/MilanDonhowe) - the legendary programmer that made this possible! :)
+[Milan](https://github.com/MilanDonhowe) - the legendary programmer that made this possible! :smile:
 
 [Documentation Webpage](http://www.morganthomas.tk/RandomSelection/)
