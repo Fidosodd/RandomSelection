@@ -1,6 +1,6 @@
 {
-  "name": "Randomizer",
-  "version": "1.0",
+  "name": "List Randomizer",
+  "version": "1.2",
   "description": "Select a random item from a local list.",
   "background": {
     "scripts":["background.js"],
@@ -9,7 +9,7 @@
   "manifest_version": 2,
   "browser_action": {
     "default_popup": "popup.html",
-    "default_title": "Randomizer"
+    "default_title": "List Randomizer"
   },
   "permissions": [
     "storage"

@@ -5,6 +5,16 @@ var listItems = [];
 
 window.onload = function() {
   document.getElementById("selectButton").onclick = randomSelector;
+  document.getElementById("editButton").onclick = editPrep;
+}
+let editPrep = () => {
+	
+  let list = document.getElementById("listSelect").value;
+	
+  let port = chrome.extension.connect({
+    name: "Save List Items"
+  });
+  port.postMessage(list);
 }
 let randomSelector = () => {
 	

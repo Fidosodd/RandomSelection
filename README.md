@@ -1,4 +1,4 @@
-# Randomizer
+# List Randomizer
 Chrome extension that selects a random item from a list locally stored  on the client's computer. 
 
 [Download the extension to your Chrome browser](https://chrome.google.com/webstore/detail/randomizer/cdhliilgdklblnbcgpdemndkojdeehpl?hl=en-US&gl=US)

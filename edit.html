@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <HTML>
   <HEAD>
-    <title>Randomizer</title>
+    <title>List Randomizer</title>
     <link type="text/css" rel="stylesheet" href="extentionStyle.css">
     <script src="storage.js"></script>
   </HEAD>
@@ -9,19 +9,11 @@
     <div id="content">
       <center>
       <p>
-        <h1>Randomizer</h1>
+        <h1>List Randomizer</h1>
       </p>
       <p>
-        <select id="listSelect">
-          <option value="" disabled Selected>Select List</option>
-          <option value="list1">List 1</option>
-          <option value="list2">List 2</option>
-          <option value="list3">List 3</option>
-          <option value="list4">List 4</option>
-          <option value="list5">List 5</option>
-          <option value="list6">List 6</option>
-        </select>
-        <button  id="editButton" type = "button">Edit</button>
+        <h3><span id="listEdit"></span></h3>
+        <a href="popup.html"><button  id="backButton" type = "button">Back</button></a>
         <a href="popup.html"><button  id="saveButton" type = "button">Save</button></a>
       </p>
       <textarea id="listContent" placeholder="Janette, Steve, Alex..."></textarea>
@@ -29,7 +21,6 @@
       </center>
     </div>
     <div id="footer">
-      |<a href="popup.html"> Back</a>
       |<a href="index.html" target="_blank"> Index</a>
       |<a href="https://github.com/Fidosodd/RandomSelection" target="_blank"> Github</a>
       |
