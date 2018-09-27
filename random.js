@@ -10,7 +10,9 @@ window.onload = function() {
 let editPrep = () => {
 	
   let list = document.getElementById("listSelect").value;
-	
+	var listId = 'listSelection';
+  list.unshift(listId);
+  
   let port = chrome.extension.connect({
     name: "Save List Items"
   });

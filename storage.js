@@ -7,7 +7,7 @@ window.onload = function() {
   let port = chrome.extension.connect({
     name: "Load List Items"
   });
-  console.log('listSelection');
+  
   port.postMessage('listSelection');
   
   port.onMessage.addListener(function(msg) {
