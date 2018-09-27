@@ -1,7 +1,8 @@
 {
   "name": "List Randomizer",
+  "short_name": "Randomizer",
   "version": "1.2",
-  "description": "Select a random item from a local list.",
+  "description": "Picks a random item from a list.",
   "background": {
     "scripts":["background.js"],
 		"persistent": true

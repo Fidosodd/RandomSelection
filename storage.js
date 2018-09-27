@@ -1,17 +1,16 @@
 //This script reads then writes to the chrome storage
 //Thanks (https://github.com/MilanDonhowe) for your amazing code!
 
-var listChange = 0;
+var listSave = 0;
 
 window.onload = function() {
   document.getElementById("saveButton").addEventListener("click", saveEdits);
   
   chrome.storage.local.get(['key'], function(value) {
           console.log('Value currently is ' + value.key);
-  
   let list = value.key;
   
-  listChange = list;
+  listSave = list;
 	
   let port = chrome.extension.connect({
     name: "Load List Items"
@@ -28,9 +27,6 @@ window.onload = function() {
 }
 let saveEdits = () => {
 	
-  if (listChange == 0) {
-      listChange = document.getElementById("listSelect").value;
-  }
   let textdata = document.getElementById('listContent').value;
 	
   let stripped = textdata.split(', ');
@@ -40,7 +36,7 @@ let saveEdits = () => {
   function slimDown(value){
       return value != "" && value != undefined
   }
-  listItems.unshift(listChange);
+  listItems.unshift(listSave);
 	
   let port = chrome.extension.connect({
     name: "Save List Items"

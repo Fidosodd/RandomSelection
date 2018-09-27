@@ -57,13 +57,6 @@ chrome.extension.onConnect.addListener(function(port) {
             console.log(msg);
           });
           break;
-        case "listSelection":
-          msg.shift();
-          console.log(msg);
-          chrome.storage.local.set({"listSelection": msg}, function(){
-            console.log(msg);
-          });
-          break;
       }
     } else {
     
@@ -103,12 +96,6 @@ chrome.extension.onConnect.addListener(function(port) {
           chrome.storage.local.get({"list6": []}, function(data){
             console.log(data.list6);
             port.postMessage(data.list6);
-          });
-          break;
-        case "listSelection":
-          chrome.storage.local.get({"listSelection": []}, function(data){
-            console.log(data.listSelection);
-            port.postMessage(data.listSelection);
           });
           break;
       }
