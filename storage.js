@@ -1,30 +1,30 @@
 //This script reads then writes to the chrome storage
 //Thanks (https://github.com/MilanDonhowe) for your amazing code!
 
+var listChange = 0;
+
 window.onload = function() {
   document.getElementById("saveButton").addEventListener("click", saveEdits);
   
+  chrome.storage.local.get(['key'], function(value) {
+          console.log('Value currently is ' + value.key);
+  
+  let list = value.key;
+  
+  listChange = list;
+	
   let port = chrome.extension.connect({
     name: "Load List Items"
   });
-  
-  port.postMessage('listSelection');
+  port.postMessage(list);
   
   port.onMessage.addListener(function(msg) {
-    console.log("message received");
-    console.log(msg);
-    let list = msg;
-    document.getElementById('listEdit').value = list;
-    
-    port.postMessage(list);
-  
-    port.onMessage.addListener(function(msg) {
     console.log("message received");
     console.log(msg);
     let listDisplay = msg;
     document.getElementById('listContent').value = listDisplay.join(', ');;
   });
-  });
+        });
 }
 let saveEdits = () => {
 	

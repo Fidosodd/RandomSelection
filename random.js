@@ -8,15 +8,12 @@ window.onload = function() {
   document.getElementById("editButton").onclick = editPrep;
 }
 let editPrep = () => {
-	
+
   let list = document.getElementById("listSelect").value;
-	var listId = 'listSelection';
-  list.unshift(listId);
-  
-  let port = chrome.extension.connect({
-    name: "Save List Items"
-  });
-  port.postMessage(list);
+  console.log(list);
+  chrome.storage.local.set({key: list}, function() {
+          console.log('Value is set to ' + list);
+        });
 }
 let randomSelector = () => {
 	
