@@ -12,7 +12,15 @@ h1	{
   font-size:        35px;
   word-spacing:     2px;
   letter-spacing:   1px;
+  text-align:center;
 }
+/*This media query recenters the h1 tag if the screen is smaller than 1362 pixels wide*/
+@media only screen and (max-width: 1362px){
+	h1	{
+		font-size:	30px;
+	}
+}
+
 h2	{
   margin-top:       25px;
   border-radius:    8px;
