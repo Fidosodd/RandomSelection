@@ -1,7 +1,7 @@
 {
   "name": "List Randomizer",
   "short_name": "Randomizer",
-  "version": "1.2",
+  "version": "1.4",
   "description": "Picks a random item from a list.",
   "background": {
     "scripts":["background.js"],

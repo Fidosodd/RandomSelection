@@ -57,6 +57,20 @@ chrome.extension.onConnect.addListener(function(port) {
             console.log(msg);
           });
           break;
+		case "list7":
+          msg.shift();
+          console.log(msg);
+          chrome.storage.local.set({"list7": msg}, function(){
+            console.log(msg);
+          });
+          break;
+		case "list8":
+          msg.shift();
+          console.log(msg);
+          chrome.storage.local.set({"list8": msg}, function(){
+            console.log(msg);
+          });
+          break;
       }
     } else {
     
@@ -96,6 +110,18 @@ chrome.extension.onConnect.addListener(function(port) {
           chrome.storage.local.get({"list6": []}, function(data){
             console.log(data.list6);
             port.postMessage(data.list6);
+          });
+          break;
+		case "list7":
+          chrome.storage.local.get({"list7": []}, function(data){
+            console.log(data.list7);
+            port.postMessage(data.list7);
+          });
+          break;
+		case "list8":
+          chrome.storage.local.get({"list8": []}, function(data){
+            console.log(data.list8);
+            port.postMessage(data.list8);
           });
           break;
       }
