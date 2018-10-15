@@ -21,7 +21,7 @@ window.onload = function() {
     console.log("message received");
     console.log(msg);
     let listDisplay = msg;
-    document.getElementById('listContent').value = listDisplay.join(', ');;
+    document.getElementById('listContent').value = listDisplay.join('\n');;
   });
         });
 }
@@ -29,7 +29,7 @@ let saveEdits = () => {
 	
   let textdata = document.getElementById('listContent').value;
 	
-  let stripped = textdata.split(', ');
+  let stripped = textdata.split('\n');
 	
   let listItems = stripped.filter(slimDown);
 	
